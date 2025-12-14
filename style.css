@@ -103,12 +103,13 @@ html .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .link
   padding: 1.25vh 2.7vh;
   font-family: "Google Sans Code", monospace;
   line-height: 150%;
-  font-size: 2vh;
+  font-size: 1.75vh;
   border: none;
 }
 @media (min-width: 720px) {
   html .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp, body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp {
     padding: 1.25vh 8vh;
+    font-size: 2vh;
   }
 }
 html .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp:hover, body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp:hover {

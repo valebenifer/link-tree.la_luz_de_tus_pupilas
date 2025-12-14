@@ -105,10 +105,11 @@
                             padding: 1.25vh 2.7vh;
                             font-family: 'Google Sans Code', monospace;
                             line-height: 150%;
-                            font-size: 2vh;
+                            font-size: 1.75vh;
                             border: none;
                             @media(min-width: 720px) {
                                 padding: 1.25vh 8vh;
+                                font-size: 2vh;
                             }
 
                             &:hover {
