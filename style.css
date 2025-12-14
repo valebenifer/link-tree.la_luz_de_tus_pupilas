@@ -1,83 +1,140 @@
-@media (max-width: 960px) {
-  body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-  }
-  body .main-container-lldtp {
-    width: 100vw;
-    height: 100vh;
-    background-color: #0A0A0A;
-    box-sizing: border-box;
-    padding: 12px;
-  }
-  body .main-container-lldtp .submain-container-lldtp {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 6vh;
-    height: 100%;
-    border-radius: 12px;
-  }
-  body .main-container-lldtp .submain-container-lldtp::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("VBF02660.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.7;
-    z-index: -1;
-    border-radius: 0.8vh;
-  }
-  body .main-container-lldtp .submain-container-lldtp img {
-    max-width: 100%;
-    max-height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 8px;
-    height: 100%;
-  }
-  body .main-container-lldtp .submain-container-lldtp .name-lldtp {
-    font-family: "Pattaya", sans-serif;
-    color: #F5F5F5;
-    font-size: 5vh;
-    width: 40%;
-    text-align: center;
-    line-height: 150%;
-  }
-  body .main-container-lldtp .submain-container-lldtp .links-container-lldtp {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-  }
-  body .main-container-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp {
-    color: #0A0A0A;
-    background-color: #F5F5F5;
-    padding: 1.25vh 8vh;
-    font-family: "Quicksand", sans-serif;
-    line-height: 150%;
-    font-size: 2vh;
-    border: none;
-    border-radius: 0.8vh;
-  }
-  body .main-container-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp:active {
-    color: #F5F5F5;
-    background-color: #0A0A0A;
-    text-decoration: underline;
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+body .main-container-lldtp {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0A0A0A;
+  box-sizing: border-box;
+  padding: 2.1rem;
+}
+body .main-container-lldtp .bracket-wrapper-lldtp {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 99%;
+  border: 3px solid #F5F5F5;
+}
+body .main-container-lldtp .bracket-wrapper-lldtp::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  width: 60%;
+  height: 5px;
+  background-color: #0A0A0A;
+}
+@media (min-width: 720px) {
+  body .main-container-lldtp .bracket-wrapper-lldtp::after {
+    width: 80%;
   }
 }
-@media (min-width: 961px) {
-  .main-container-lldtp {
-    display: none;
+body .main-container-lldtp .bracket-wrapper-lldtp::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  width: 60%;
+  height: 5px;
+  background-color: #0A0A0A;
+}
+@media (min-width: 720px) {
+  body .main-container-lldtp .bracket-wrapper-lldtp::before {
+    width: 80%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.3vh;
+}
+body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .photo-container-lldtp {
+  width: 9rem;
+}
+@media (min-width: 720px) {
+  body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .photo-container-lldtp {
+    width: 13rem;
+  }
+}
+body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .photo-container-lldtp img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .name-subname-container-lldtp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  font-family: "Google Sans Code", monospace;
+  text-align: center;
+}
+body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .name-subname-container-lldtp .name-lldtp {
+  color: #F5F5F5;
+  font-size: 2.5vh;
+  line-height: 150%;
+}
+body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .name-subname-container-lldtp .subname-lldtp {
+  color: #919599;
+  font-size: 1.75vh;
+  text-underline-offset: 4px;
+  line-height: 150%;
+}
+body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp {
+  color: #0A0A0A;
+  background-color: #F5F5F5;
+  padding: 1.25vh 2.7vh;
+  font-family: "Google Sans Code", monospace;
+  line-height: 150%;
+  font-size: 2vh;
+  border: none;
+}
+@media (min-width: 720px) {
+  body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp {
+    padding: 1.25vh 8vh;
+  }
+}
+body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp:hover {
+  background-color: #919599;
+  color: #F5F5F5;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp:active {
+  color: #F5F5F5;
+  background-color: #0A0A0A;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+body .main-container-lldtp .bracket-wrapper-lldtp .link-instagram-lldtp {
+  position: absolute;
+  bottom: -8px;
+  font-family: "Google Sans Code", monospace;
+  color: #919599;
+  font-size: 1.2vh;
+  text-underline-offset: 4px;
+  line-height: 150%;
+}
+
+/*# sourceMappingURL=style.css.map */

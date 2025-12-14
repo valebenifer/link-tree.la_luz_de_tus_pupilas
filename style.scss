@@ -1,4 +1,4 @@
-@media(max-width: 960px) {
+
     body {
         margin: 0;
         padding: 0;
@@ -6,12 +6,46 @@
         width: 100%;
         overflow: hidden;
 
+
         .main-container-lldtp {
             width: 100vw;
             height: 100vh;
             background-color: #0A0A0A;
             box-sizing: border-box;
-            padding: 12px;
+            padding: 2.1rem;
+
+            .bracket-wrapper-lldtp {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 99%;
+                border: 3px solid #F5F5F5;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: -3px;
+                    width: 60%;
+                    height: 5px;
+                    background-color: #0A0A0A;
+                    @media(min-width: 720px) {
+                        width: 80%;
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -3px;
+                    width: 60%;
+                    height: 5px;
+                    background-color: #0A0A0A;
+                    @media(min-width: 720px) {
+                        width: 80%;
+                    }
+                }
 
                 .submain-container-lldtp {
                     position: relative;
@@ -20,41 +54,47 @@
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    gap: 6vh;
-                    height: 100%;
-                    border-radius: 12px;
+                    gap: 4.3vh;
 
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background-image: url('VBF02660.webp');
-                        background-size: cover;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        opacity: 0.7; 
-                        z-index: -1;
-                        border-radius: 0.8vh;
-                    }
-    
-                    img {
-                        max-width: 100%;
-                        max-height: 100%;
-                        object-fit: cover;
-                        border-radius: 8px;
-                        height: 100%;
-                    }
-                            
-                    .name-lldtp {
-                        font-family: 'Pattaya', sans-serif;
-                        color: #F5F5F5;
-                        font-size: 5vh;
-                        width: 40%;
-                        text-align: center;
-                        line-height: 150%;
+                    .photo-name-container-lldtp {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 18px;
+
+                        .photo-container-lldtp {
+                            width: 9rem;
+                            @media(min-width: 720px) {
+                                width: 13rem;
+                            }
+                            img {
+                                width: 100%;
+                                object-fit: cover;
+                                height: 100%;
+                            }
+                        }
+
+                        .name-subname-container-lldtp {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 2px;
+                            font-family: 'Google Sans Code', monospace;
+                            text-align: center;
+
+                            .name-lldtp {
+                                color: #F5F5F5;
+                                font-size: 2.5vh;
+                                line-height: 150%;
+                            }
+
+                            .subname-lldtp {
+                            color: #919599;
+                                font-size: 1.75vh; 
+                                text-underline-offset: 4px;
+                                line-height: 150%;
+                            }
+                        }
                     }
 
                     .links-container-lldtp {
@@ -65,27 +105,45 @@
                         .button-lldtp {
                             color: #0A0A0A;
                             background-color: #F5F5F5;
-                            padding: 1.25vh 8vh;
-                            font-family: 'Quicksand', sans-serif;
+                            padding: 1.25vh 2.7vh;
+                            font-family: 'Google Sans Code', monospace;
                             line-height: 150%;
                             font-size: 2vh;
                             border: none;
-                            border-radius: 0.8vh;
+                            @media(min-width: 720px) {
+                                padding: 1.25vh 8vh;
+                            }
+
+                            &:hover {
+                                background-color: #919599; 
+                                color: #F5F5F5;
+                                cursor: pointer;
+                                text-decoration: underline;
+                                text-decoration-thickness: 2px;
+                                text-underline-offset: 4px;
+                            }
 
                             &:active {
                                 color: #F5F5F5;
                                 background-color: #0A0A0A;
                                 text-decoration: underline;
+                                text-decoration-thickness: 1px;
                             }
                         }
                     }
-                }
-        }           
-    }  
-}
 
-@media(min-width: 961px) {
-    .main-container-lldtp {
-        display: none;
-    }
-}
+                    
+                }
+
+                .link-instagram-lldtp {
+                    position: absolute;
+                    bottom: -8px;
+                    font-family: 'Google Sans Code', monospace;
+                    color: #919599;
+                    font-size: 1.2vh; 
+                    text-underline-offset: 4px;
+                    line-height: 150%;
+                }
+            }  
+        }
+     }
