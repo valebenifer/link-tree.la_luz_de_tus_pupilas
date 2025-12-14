@@ -1,18 +1,16 @@
-body {
+html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow: hidden;
 }
-body .main-container-lldtp {
-  width: 100vw;
-  height: 100vh;
+html .main-container-lldtp, body .main-container-lldtp {
+  height: 100%;
   background-color: #0A0A0A;
   box-sizing: border-box;
   padding: 2.1rem;
 }
-body .main-container-lldtp .bracket-wrapper-lldtp {
+html .main-container-lldtp .bracket-wrapper-lldtp, body .main-container-lldtp .bracket-wrapper-lldtp {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -21,7 +19,7 @@ body .main-container-lldtp .bracket-wrapper-lldtp {
   height: 99%;
   border: 3px solid #F5F5F5;
 }
-body .main-container-lldtp .bracket-wrapper-lldtp::after {
+html .main-container-lldtp .bracket-wrapper-lldtp::after, body .main-container-lldtp .bracket-wrapper-lldtp::after {
   content: "";
   position: absolute;
   top: -3px;
@@ -30,11 +28,11 @@ body .main-container-lldtp .bracket-wrapper-lldtp::after {
   background-color: #0A0A0A;
 }
 @media (min-width: 720px) {
-  body .main-container-lldtp .bracket-wrapper-lldtp::after {
+  html .main-container-lldtp .bracket-wrapper-lldtp::after, body .main-container-lldtp .bracket-wrapper-lldtp::after {
     width: 80%;
   }
 }
-body .main-container-lldtp .bracket-wrapper-lldtp::before {
+html .main-container-lldtp .bracket-wrapper-lldtp::before, body .main-container-lldtp .bracket-wrapper-lldtp::before {
   content: "";
   position: absolute;
   bottom: -3px;
@@ -43,11 +41,11 @@ body .main-container-lldtp .bracket-wrapper-lldtp::before {
   background-color: #0A0A0A;
 }
 @media (min-width: 720px) {
-  body .main-container-lldtp .bracket-wrapper-lldtp::before {
+  html .main-container-lldtp .bracket-wrapper-lldtp::before, body .main-container-lldtp .bracket-wrapper-lldtp::before {
     width: 80%;
   }
 }
-body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp {
+html .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp, body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp {
   position: relative;
   z-index: 1;
   display: flex;
@@ -56,26 +54,26 @@ body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp {
   justify-content: center;
   gap: 4.3vh;
 }
-body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp {
+html .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp, body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 18px;
 }
-body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .photo-container-lldtp {
+html .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .photo-container-lldtp, body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .photo-container-lldtp {
   width: 9rem;
 }
 @media (min-width: 720px) {
-  body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .photo-container-lldtp {
+  html .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .photo-container-lldtp, body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .photo-container-lldtp {
     width: 13rem;
   }
 }
-body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .photo-container-lldtp img {
+html .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .photo-container-lldtp img, body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .photo-container-lldtp img {
   width: 100%;
   object-fit: cover;
   height: 100%;
 }
-body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .name-subname-container-lldtp {
+html .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .name-subname-container-lldtp, body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .name-subname-container-lldtp {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,23 +81,23 @@ body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .phot
   font-family: "Google Sans Code", monospace;
   text-align: center;
 }
-body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .name-subname-container-lldtp .name-lldtp {
+html .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .name-subname-container-lldtp .name-lldtp, body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .name-subname-container-lldtp .name-lldtp {
   color: #F5F5F5;
   font-size: 2.5vh;
   line-height: 150%;
 }
-body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .name-subname-container-lldtp .subname-lldtp {
+html .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .name-subname-container-lldtp .subname-lldtp, body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .photo-name-container-lldtp .name-subname-container-lldtp .subname-lldtp {
   color: #919599;
   font-size: 1.75vh;
   text-underline-offset: 4px;
   line-height: 150%;
 }
-body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp {
+html .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp, body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
-body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp {
+html .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp, body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp {
   color: #0A0A0A;
   background-color: #F5F5F5;
   padding: 1.25vh 2.7vh;
@@ -109,11 +107,11 @@ body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .link
   border: none;
 }
 @media (min-width: 720px) {
-  body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp {
+  html .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp, body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp {
     padding: 1.25vh 8vh;
   }
 }
-body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp:hover {
+html .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp:hover, body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp:hover {
   background-color: #919599;
   color: #F5F5F5;
   cursor: pointer;
@@ -121,13 +119,13 @@ body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .link
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
 }
-body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp:active {
+html .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp:active, body .main-container-lldtp .bracket-wrapper-lldtp .submain-container-lldtp .links-container-lldtp .button-lldtp:active {
   color: #F5F5F5;
   background-color: #0A0A0A;
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
-body .main-container-lldtp .bracket-wrapper-lldtp .link-instagram-lldtp {
+html .main-container-lldtp .bracket-wrapper-lldtp .link-instagram-lldtp, body .main-container-lldtp .bracket-wrapper-lldtp .link-instagram-lldtp {
   position: absolute;
   bottom: -8px;
   font-family: "Google Sans Code", monospace;
